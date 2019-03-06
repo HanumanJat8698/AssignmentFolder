@@ -1,17 +1,15 @@
-import java.util.*;
 class Cal
 {
 	
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
+		int c=1;
 		while(true)
 		{
-			System.out.println("Enter 2 numbers");
-			int a=sc.nextInt();
-			int b=sc.nextInt();
-			System.out.println("Enter choice \n 1.ad\n2.sub\n3.mul\n4.div\n");
-			int c=sc.nextInt();
+			System.out.println("2 numbers are 15 and 25:");
+			int a=15;
+			int b=25;
+			
 			switch(c)
 			{
 			case 1:	System.out.println("Addition :"+(a+b));
@@ -27,6 +25,7 @@ class Cal
 			default:System.out.println("Wrong choice");
 					break;
 			}
+			c++;
 		}
 	}
 }
