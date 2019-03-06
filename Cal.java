@@ -12,7 +12,8 @@ class Cal
 			System.out.println("Multiplication :"+(a*b));
 			System.out.println("Division :"+(a/b));
 			
-			}
+			System.exit(0);
+			
 		}
 	}
 }
