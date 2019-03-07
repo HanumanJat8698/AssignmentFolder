@@ -4,11 +4,12 @@ class Cal
 	public static void main(String args[])
 	{
 		int c=1;
+		
 		while(true)
 		{
 			
-			int a=Integer.parseInt(args[0]);
-			int b=Integer.parseInt(args[1]);
+			int a=0;
+			int b=0;
 			System.out.println("2 numbers are"+a+" and "+b);
 			switch(c)
 			{
