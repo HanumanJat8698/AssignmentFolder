@@ -7,9 +7,10 @@ class Cal
 		
 		while(true)
 		{
-			
-			int a=0;
-			int b=0;
+			String s1="1";
+			String s2="1";
+			int a=Integer.parseInt(s1);
+			int b=Integer.parseInt(s2);;
 			System.out.println("2 numbers are"+a+" and "+b);
 			switch(c)
 			{
