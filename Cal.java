@@ -7,8 +7,8 @@ class Cal
 		while(true)
 		{
 			System.out.println("2 numbers are 15 and 25:");
-			int a=15;
-			int b=25;
+			int a=Integer.parseInt(args[0]);
+			int b=Integer.parseInt(args[1]);
 			
 			switch(c)
 			{
