@@ -7,8 +7,8 @@ class Cal
 		
 		while(true)
 		{
-			String s1="1";
-			String s2="1";
+			String s1=null;
+			String s2=null;
 			int a=Integer.parseInt(s1);
 			int b=Integer.parseInt(s2);;
 			System.out.println("2 numbers are"+a+" and "+b);
