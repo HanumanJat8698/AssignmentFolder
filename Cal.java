@@ -6,10 +6,10 @@ class Cal
 		int c=1;
 		while(true)
 		{
-			System.out.println("2 numbers are 15 and 25:");
+			
 			int a=Integer.parseInt(args[0]);
 			int b=Integer.parseInt(args[1]);
-			
+			System.out.println("2 numbers are"+a+" and "+b);
 			switch(c)
 			{
 			case 1:	System.out.println("Addition :"+(a+b));
