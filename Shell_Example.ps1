@@ -1,5 +1,5 @@
 param(
-[string]$foo1
+$foo1
 )
 function prog()
 {
