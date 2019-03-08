@@ -1,6 +1,9 @@
+param(
+[int]$foo1
+)
 function prog()
 {
-	$a=5;
+	$a=$foo1;
 	$total=1;
 	for($i=1;$i -le $a;$i++)
 	{
