@@ -1,17 +1,11 @@
-﻿try
+﻿#Program for array string sorting
+#input in this way abc,efg,ghi.......
+Param
+(
+    $string_Array
+)
+try
 {
-    cls
-    Write-Host "Enter String Values and Hit Enter when done`n"
-    $string_Array = @()
-    do 
-    {
-        $input = (Read-Host "Enter String or hit Enter")
-        if ($input -ne '')
-        {
-            $string_Array += $input
-        }
-    }
-    until ($input -eq '')
     Write-Host -NoNewline "Before :"
     Write-Host -NoNewline $string_Array 
     for($extLoopVar = 0;$extLoopVar -le $string_Array.Length - 1;$extLoopVar++)

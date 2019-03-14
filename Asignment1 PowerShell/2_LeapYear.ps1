@@ -1,8 +1,13 @@
 #Program for Checking Year is Leap Year or Not
+# !!Please input with Command LIne or Param Block
+Param
+(
+    [string]$year_Input
+)
 try
 {
-    cls
-    [int]$year_Input = Read-Host "Enter Year to check leap year or not"
+
+    [int]$year_Input = $year_Input
     if($year_Input % 400 -eq 0)
     {
 	    Write-Host "Entered year is leap year"

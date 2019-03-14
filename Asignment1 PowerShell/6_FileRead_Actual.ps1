@@ -1,8 +1,13 @@
-﻿try
+﻿#!please pass path along with command line
+Param
+(
+    $path_Value
+)
+try
 {
-    cls
     Write-Host " -------------Using Splitting---------------"
-    $location_Value = Get-Content -path "C:\Users\hanuman.jat\Desktop\Assignments\PowerShell\Solutions\ShellRead.txt" | Out-String
+    #$path_Value= Read-Host "Enter Path od File : "
+    $location_Value = Get-Content -path $path_Value| Out-String
     [array]$charArrayContent=$location_Value.split('.')
     for($loopVar = 0;$loopVar -le $charArrayContent.Length - 2;$loopVar++)
     {
@@ -11,7 +16,7 @@
     }
 
     Write-Host "`n`n--------------------Using Commands--------------"
-    foreach($line in Get-Content "C:\Users\hanuman.jat\Desktop\Assignments\PowerShell\Solutions\ShellRead.txt")
+    foreach($line in Get-Content $path_Value)
     {
         if($line -match $regex)
         {

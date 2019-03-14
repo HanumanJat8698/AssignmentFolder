@@ -1,7 +1,12 @@
-﻿try
+﻿#!please pass path along with command line
+Param
+(
+    $path_Value
+)
+try
 {
     cls
-    $location_Value = Get-Content -path "C:\Users\hanuman.jat\Desktop\Assignments\PowerShell\Solutions\ShellRead.txt" | Out-String
+    $location_Value = Get-Content -path $path_Value | Out-String
     [array]$charArrayContent = $location_Value.split('.')
     Write-Host "------------Using Splitting Method-----------"
     for($loopVar = $charArrayContent.Length - 2;$loopVar -ge 0;$loopVar--)

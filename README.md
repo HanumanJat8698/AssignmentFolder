@@ -1,2 +1,0 @@
-# MyProject
-Simple Code transfer

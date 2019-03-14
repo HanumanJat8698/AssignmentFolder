@@ -1,8 +1,12 @@
-#Program for palindrome
+#Program for palindrome !please Input with commandline argument
+Param
+(
+    [string]$palindrome_Input
+)
 try
 {
-    cls
-    [string]$palindrome_Input = Read-Host "Enter value to check palindrome or not"
+    
+    #[string]$palindrome_Input = Read-Host "Enter value to check palindrome or not"
     [string]$reverse_Value = ""
 	$convert_To_Array = $palindrome_Input.toCharArray()
 	for($loop_var = $convert_To_Array.length-1;$loop_var -ge 0;$loop_var--)

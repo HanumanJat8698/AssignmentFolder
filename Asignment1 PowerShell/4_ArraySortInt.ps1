@@ -1,17 +1,11 @@
-﻿cls
+﻿#program for array integer sorting
+#!!Please input in format 1,5,4,2,......
+Param
+(
+   $array_Value
+)
 try
 {
-    Write-Host "Enter Integer Values and Hit Enter when done`n"
-    $array_Value = @()
-    do 
-    {
-        $input =[int] (Read-Host "Enter Value or hit Enter")
-        if ($input -ne '')
-        {
-            $array_Value += $input
-        }
-    }
-    until ($input -eq '')
     Write-Host -NoNewline "Before :"
     Write-Host -NoNewline $array_Value
     for($extLoopVar = 0;$extLoopVar -le $array_Value.Length - 1;$extLoopVar++)
@@ -32,5 +26,5 @@ try
 }
 catch
 {
-    Write-Host "Invalid Input"
+    Write-Host "`n`nInvalid Input Integer Only"
 }

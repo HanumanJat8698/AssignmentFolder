@@ -1,8 +1,14 @@
-cls
-function dToB
+#!!Please input with Param Block Command Line --  FirstChoice Value\
+#FirstChoice =1 if Decimal to Binary
+#FirstChoice =2 if Binary to Decimal
+Param
+(
+    [string]$choice,[string]$user_Input
+)
+function dToB($user_Input)
 {
 	#function for Decimal to Binar
-	[int]$dec_Input = Read-Host "Enter Decimal Number :"
+	[int]$dec_Input = $user_Input
 	[string]$reverse_Result = ""
 	while($dec_Input -ne 0)
 	{
@@ -18,12 +24,12 @@ function dToB
     Write-Host -NoNewline "Binary :"
     Write-Host -NoNewline $result	
 }
-function bToD
+function bToD($user_Input)
 {
     try
     {
         #function for Binary To Decimal
-	    [string]$bin_Input = Read-Host "Enter Binary Number :"
+	    [string]$bin_Input = $user_Input
 	    $aray_Convert = $bin_Input.toCharArray()
 	    [int]$mul = 1
 	    [int]$dec_Result = 0
@@ -64,16 +70,16 @@ function fun
 {
     try
     {
-	    [int]$choice = Read-Host "Enter Choice 1. Decimal to Binary 2. Binary to Decimal"
+	    [int]$choice = $choice
 	    if($choice -eq 1)
 	    {
 		    Write-Host "Decimal to Binary Conversion:"
-		    dToB
+		    dToB $user_Input
 	    }
 	    elseif($choice -eq 2)
 	    {
 		    Write-Host "Binary to Decimal Conversion:"
-		    bToD
+		    bToD $user_Input
 	    }
 	    else
 	    {
