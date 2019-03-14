@@ -1,16 +1,12 @@
 ﻿#sorting program of hashtable according to name and according to value
-Param
-(
+Param(
     $hash_Table
 )
-try
-{   
-    if($hash_Table.Count -eq 0)
-    {
+try{   
+    if($hash_Table.Count -eq 0){
         Write-Host "HashTable is Empty"
     }
-    else
-    {
+    else{
         Write-Host "`n`nOriginal Data : "
         $hash_Table
         Write-Host "`n`nSorting Data According to name : "
@@ -19,7 +15,6 @@ try
         $hash_Table.GetEnumerator() | sort -Property value
     }
 }
-catch
-{
+catch{
     Write-Host "Exception Caugh"
 }
