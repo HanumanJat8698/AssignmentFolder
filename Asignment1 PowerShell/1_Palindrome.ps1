@@ -12,12 +12,12 @@ try{
     if($palindrome_Input -eq ""){
         Write-Host "You Entered Null !Please give some input ";
     }
-	elseif($reverse_Value -eq $palindrome_Input){
+    elseif($reverse_Value -eq $palindrome_Input){
 	    Write-Host "Entered String is Palindrome"
-	}
-	else{
-	    Write-Host "Entered String is not Palindrome"
-	}
+    }
+    else{
+        Write-Host "Entered String is not Palindrome"
+    }
 }
 catch{
 	Write-Host "Exception In Execution"

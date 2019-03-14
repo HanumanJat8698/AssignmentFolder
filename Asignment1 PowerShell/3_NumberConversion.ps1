@@ -39,7 +39,7 @@ function bToD($user_Input){
         for($loopVar = $bin_Array.length - 1;$loopVar -ge 0;$loopVar--){
             if($bin_Array[$loopVar] -eq 0 -OR $bin_Array[$loopVar] -eq 1){
                 $dec_Result = $dec_Result + ($bin_Array[$loopVar] * $mul)
-			    $mul = $mul * 2
+                $mul = $mul * 2
             }
             else{
                 throw "Exception"
