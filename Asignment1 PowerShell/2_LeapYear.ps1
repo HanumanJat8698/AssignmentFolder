@@ -3,21 +3,21 @@
 Param(
     [string]$yearInput
 )
-try{
+try {
     [int]$yearInput = $yearInput
-    if($yearInput % 400 -eq 0){
+    if($yearInput % 400 -eq 0) {
         Write-Host "Entered year is leap year"
     }
-    elseif($yearInput % 100 -eq 0){
+    elseif($yearInput % 100 -eq 0) {
         Write-Host "Entered year is not leap year"
     }
-    elseif($yearInput % 4 -eq 0){
+    elseif($yearInput % 4 -eq 0) {
         Write-Host "Entered year is leap year"
     }
-    else{
+    else {
         Write-Host "Entered year is not leap year"
     }
 }
-catch{
+catch {
     Write-Host "`nEXCEPTION : Entered number is not in Integer Format"
 }

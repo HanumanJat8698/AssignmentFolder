@@ -3,17 +3,17 @@ Param(
     [hashtable]$hashTable,
     $search
 )
-try{
-    if($hashTable.Count -eq 0){
+try {
+    if($hashTable.Count -eq 0) {
         Write-Host "HashTable is Empty"
     }
-    else{
+    else {
         Write-Host -NoNewLine "`n Keys : "
         Write-Host -NoNewLine $hashTable.Keys
         Write-Host -NoNewLine "`nValue :"
         Write-Host -NoNewLine $hashTable[$search]
     }
 }
-catch{
+catch {
     Write-Host "No Such Value exist"
 }

@@ -2,11 +2,11 @@
 Param(
     $hashTable
 )
-try{   
-    if($hashTable.Count -eq 0){
+try {   
+    if($hashTable.Count -eq 0) {
         Write-Host "HashTable is Empty"
     }
-    else{
+    else {
         Write-Host "`n`nOriginal Data : "
         $hashTable
         Write-Host "`n`nSorting Data According to name : "
@@ -15,6 +15,6 @@ try{
         $hashTable.GetEnumerator() | sort -Property value
     }
 }
-catch{
+catch {
     Write-Host "Exception Caught"
 }

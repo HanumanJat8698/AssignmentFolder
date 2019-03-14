@@ -3,12 +3,12 @@
 Param(
     $stringArray
 )
-try{
+try {
     Write-Host -NoNewline "Before :"
     Write-Host -NoNewline $stringArray 
-    for($extLoopVar = 0 ; $extLoopVar -le $stringArray.Length - 1 ; $extLoopVar ++){
-        for($intLoopVar = $extLoopVar + 1 ; $intLoopVar -le $stringArray.Length - 1 ; $intLoopVar ++){
-            if($stringArray[$extLoopVar].CompareTo($stringArray[$intLoopVar]) -gt 0){
+    for($extLoopVar = 0 ; $extLoopVar -le $stringArray.Length - 1 ; $extLoopVar ++) {
+        for($intLoopVar = $extLoopVar + 1 ; $intLoopVar -le $stringArray.Length - 1 ; $intLoopVar ++) {
+            if($stringArray[$extLoopVar].CompareTo($stringArray[$intLoopVar]) -gt 0) {
                 [string]$swapVar = $stringArray[$extLoopVar]
                 $stringArray[$extLoopVar] = $stringArray[$intLoopVar]
                 $stringArray[$intLoopVar] = $swapVar
@@ -19,6 +19,6 @@ try{
     Write-Host -NoNewline $stringArray
     Write-Host -NoNewline "`n"
 }
-catch{
+catch {
     Write-Host "Invalid Input"
 }

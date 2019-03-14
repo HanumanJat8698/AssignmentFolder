@@ -2,23 +2,23 @@
 Param(
     [string]$palindromeInput
 )
-try{ 
+try { 
     #[string]$palindromeInput = Read-Host "Enter value to check palindrome or not"
     [string]$reverseValue = ""
     $convertToArray = $palindromeInput.toCharArray()
-    for($loopVar = $convertToArray.length-1 ; $loopVar -ge 0 ; $loopVar --){
+    for($loopVar = $convertToArray.length-1 ; $loopVar -ge 0 ; $loopVar --) {
         $reverseValue = $reverseValue + $convertToArray[$loopVar]
 	}
-    if($palindromeInput -eq ""){
+    if($palindromeInput -eq "") {
         Write-Host "You Entered Null !Please give some input ";
     }
-    elseif($reverseValue -eq $palindromeInput){
+    elseif($reverseValue -eq $palindromeInput) {
 	    Write-Host "Entered String is Palindrome"
     }
-    else{
+    else {
         Write-Host "Entered String is not Palindrome"
     }
 }
-catch{
+catch {
 	Write-Host "Exception In Execution"
 }
