@@ -1,10 +1,10 @@
 ﻿#!please pass path along with command line for jason file
 Param(
-    $path_Value
+    $pathValue
 )
 try{
-    $fileContent = Get-Content $path_Value
-    for($loopVar = 0;$loopVar -le $fileContent.Length - 1;$loopVar++){
+    $fileContent = Get-Content $pathValue
+    for($loopVar = 0 ; $loopVar -le $fileContent.Length - 1 ; $loopVar ++){
         Write-Host $fileContent[$loopVar]
     }
 }

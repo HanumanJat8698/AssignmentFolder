@@ -1,17 +1,17 @@
 #Program for Checking Year is Leap Year or Not
 # !!Please input with Command LIne or Param Block
 Param(
-    [string]$year_Input
+    [string]$yearInput
 )
 try{
-    [int]$year_Input = $year_Input
-    if($year_Input % 400 -eq 0){
+    [int]$yearInput = $yearInput
+    if($yearInput % 400 -eq 0){
         Write-Host "Entered year is leap year"
     }
-    elseif($year_Input % 100 -eq 0){
+    elseif($yearInput % 100 -eq 0){
         Write-Host "Entered year is not leap year"
     }
-    elseif($year_Input % 4 -eq 0){
+    elseif($yearInput % 4 -eq 0){
         Write-Host "Entered year is leap year"
     }
     else{

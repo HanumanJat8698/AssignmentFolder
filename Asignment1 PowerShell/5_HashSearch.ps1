@@ -1,17 +1,17 @@
 ﻿#program for searching into hashtable and please give the key you want to search
 Param(
-    [hashtable]$hash_Table,
-    $Search
+    [hashtable]$hashTable,
+    $search
 )
 try{
-    if($hash_Table.Count -eq 0){
+    if($hashTable.Count -eq 0){
         Write-Host "HashTable is Empty"
     }
     else{
         Write-Host -NoNewLine "`n Keys : "
-        Write-Host -NoNewLine $hash_Table.Keys
+        Write-Host -NoNewLine $hashTable.Keys
         Write-Host -NoNewLine "`nValue :"
-        Write-Host -NoNewLine $hash_Table[$Search]
+        Write-Host -NoNewLine $hashTable[$search]
     }
 }
 catch{
