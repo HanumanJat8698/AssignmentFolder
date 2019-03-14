@@ -1,7 +1,6 @@
 #Program for Checking Year is Leap Year or Not
 # !!Please input with Command LIne or Param Block
-Param
-(
+Param(
     [string]$year_Input
 )
 try{

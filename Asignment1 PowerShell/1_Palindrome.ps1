@@ -1,32 +1,24 @@
 #Program for palindrome !please Input with commandline argument
-Param
-(
+Param(
     [string]$palindrome_Input
 )
-try
-{
-    
+try{ 
     #[string]$palindrome_Input = Read-Host "Enter value to check palindrome or not"
     [string]$reverse_Value = ""
-	$convert_To_Array = $palindrome_Input.toCharArray()
-	for($loop_var = $convert_To_Array.length-1;$loop_var -ge 0;$loop_var--)
-	{
+    $convert_To_Array = $palindrome_Input.toCharArray()
+    for($loop_var = $convert_To_Array.length-1;$loop_var -ge 0;$loop_var--){
         $reverse_Value = $reverse_Value + $convert_To_Array[$loop_var]
 	}
-    if($palindrome_Input -eq "")
-    {
+    if($palindrome_Input -eq ""){
         Write-Host "You Entered Null !Please give some input ";
     }
-	elseif($reverse_Value -eq $palindrome_Input)
-	{
+	elseif($reverse_Value -eq $palindrome_Input){
 	    Write-Host "Entered String is Palindrome"
 	}
-	else
-	{
+	else{
 	    Write-Host "Entered String is not Palindrome"
 	}
 }
-catch
-{
+catch{
 	Write-Host "Exception In Execution"
 }
