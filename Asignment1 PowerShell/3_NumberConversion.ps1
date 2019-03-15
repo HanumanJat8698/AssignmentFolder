@@ -4,7 +4,7 @@
 Param(
     [string]$choice , [string]$userInput
 )
-function -ConvertDecimalToBinary($userInput) {
+function Convert-DecimalToBinary($userInput) {
     #function for Decimal to Binar
     [int]$decInput = $userInput
     [string]$reverseResult = ""
@@ -20,7 +20,7 @@ function -ConvertDecimalToBinary($userInput) {
     Write-Host -NoNewline "Binary :"
     Write-Host -NoNewline $result	
 }
-function -ConvertBinaryToDecimal($userInput) {
+function Convert-BinaryToDecimal($userInput) {
     try{
         #function for Binary To Decimal
         [string]$binInput = $userInput
@@ -52,16 +52,16 @@ function -ConvertBinaryToDecimal($userInput) {
         Write-Host "Invalid Input Enter Binary Number Only"
     }
 }
-function -EnterFun {
+function Enter-Fun {
     try {
         [int]$choice = $choice
 	    if($choice -eq 1) {
 		    Write-Host "Decimal to Binary Conversion:"
-		    -ConvertDecimalToBinary $userInput
+		    Convert-DecimalToBinary $userInput
 	    }
 	    elseif($choice -eq 2) {
 		    Write-Host "Binary to Decimal Conversion:"
-		    -ConvertBinaryToDecimal $userInput
+		    Convert-BinaryToDecimal $userInput
 	    }
 	    else {
 		    Write-Host "Wrong Choice"
@@ -71,4 +71,4 @@ function -EnterFun {
         Write-Host "`nInvalid Input"
     }
 }
--EnterFun
+Enter-Fun
