@@ -4,8 +4,9 @@ LOOPVAR=2
 COUNTVAR=0
 if ! [[ "$INVAR" =~ ^[0-9]+$ ]]
     then
-        echo "Sorry integers only"
+        echo "Invalid Input"
 		exit
+		
 fi
 if [ $INVAR -lt 2 ]
 	then
