@@ -1,4 +1,0 @@
-This is First line of my file.
-This is Second Line of my file.
-This is Third line of my file.
-This is Last line of my file.

@@ -1,2 +1,0 @@
-# AssignmentFolder
-Repository for assignments
