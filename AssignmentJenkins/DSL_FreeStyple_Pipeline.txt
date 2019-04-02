@@ -1,0 +1,24 @@
+--Create a DSL for freestyle and pipeline job--
+Step 1: Install build pipeline plugin from manage plugin option inside manage Jenkins.
+Step 2: Install DSL plugin same from manage plugin option.
+Step 2: Now create job DSL-job1 and choose freestyle option and then click ok.
+Step 3: Choose DSL option from add build step.
+		First Option is to type DSL script.
+		Second, choose already existing DSL script.
+Step 4: Let's create DSL script so choose the first option
+		type following script as for example
+		job('DSL-job1'){
+			steps {
+				batchFile('path');
+			}
+		}
+		Now click on apply and save
+Step 5: Similarly create DSL-job2 and
+		change batchFile('ver'); //command can be anything
+		In build trigger select : Build after other projects are built and type DSL-job1.
+		Now apply and save
+Step 6: Now choose build pipeline view from the + symbol on the dashboard and choose the first job as DSL-job1 and set other configuration according to need.
+Step 7: Execute DSL-job1, if it successful then DSL-job2 will also execute.
+Step 8: Output can be seen in the form of the pipeline as well.
+
+Note :If there exist any error when including script using path then install Build Security plugin for it.

@@ -1,0 +1,22 @@
+--Use Jenkins UI to create the job--
+Step 1: First, create a job at Jenkins dashboard.
+Step 2: Choose the style and then click ok.
+Step 3: Now configure job by selecting a source from the local system or from version control system as GitHub or subversion.
+Step 4: Use the Build option 
+		Select Windows batch command //if the system is windows.
+		Select Execute shell //if the system is Ubuntu.
+Step 5: Post-build options can also be added which means if a job builds successfully what to do next after it.
+Step 6: Click on apply and save.
+Step 7: Click on the build now and see console output.
+
+For example -If want to execute java program then,
+			 Choose file from git 
+			 Select execute windows batch command from build option and
+			 type cd c:\\users\\path_to_program_location
+			 javac file_name.java
+			 java file_name
+	
+			 Click on apply and save 
+			 Build the project and see the output on console of Jenkins.
+			 
+So, in this manner, we can create a job using Jenkins UI

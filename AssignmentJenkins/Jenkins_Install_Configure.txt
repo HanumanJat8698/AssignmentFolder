@@ -1,0 +1,23 @@
+--Download Jenkins and configure it on the local system--
+Step 1: Jenkins can be downloaded from jenkins.io as an executable file or war file.
+Step 2: To configure on the local system 
+		a. Check java is already installed on the system or not by running java -version.
+		
+		If not installed then download from below link-
+		https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+		
+		else Go to the location of war file where it is present.
+		b. Run cmd as administrator from there.
+		c. Run command c:> java -jar jenkins.war  //run default on port 8080
+		d. To make it standalone run command : c:> java -jar jenkins.war --httpPort=port_number //eg 8080,9090,8181..
+		e. Once coomad executed goto browser and type localhost:port_number //eg localhost:8080
+		f. It will ask for administrator password 
+			
+			A. Go to the folder .jenkins inside user and goto secret folder and search file initialAdminPassword and copy password and paste on the browser.
+			//once it is done.
+		g. There will be 2 options 1. Install suggested plugin 2. According to choice
+		h. Once plugin installed then create an account by clicking on continue.
+		i. Continue as Admin or create own account
+		j. Once it is done you are all set and now start Jenkins.
+		k. Jenkins is successfully installed on System.
+	Note: Jenkins can be started with Tomcat as well on same port by installing Jenkins inside the webapps folder of tomcat.
