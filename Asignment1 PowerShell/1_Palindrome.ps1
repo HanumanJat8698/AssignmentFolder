@@ -1,8 +1,8 @@
-#Program for palindrome !please Input with commandline argument
+#Program for palindrome !please Input with CommandLine argument
 Param(
     [string]$palindromeInput
 )
-try { 
+try {
     #[string]$palindromeInput = Read-Host "Enter value to check palindrome or not"
     [string]$reverseValue = ""
     $convertToArray = $palindromeInput.toCharArray()
