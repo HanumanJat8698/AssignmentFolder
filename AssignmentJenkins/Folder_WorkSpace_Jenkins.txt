@@ -1,0 +1,13 @@
+--Create a simple job to create a folder in a work-space of Jenkins--
+Step 1: Create a job by clicking on New Item option at Jenkins dashboard.
+Step 2: Give the name of the project and if there is any credential on naming convention then give name according to that.
+Step 3: Choose the style of project and click ok.
+Step 4: Once it is done folder in the workspace of Jenkins is created.
+Step 5: It can be checked from location -
+		For eg: C:\Users\User_Name\.jenkins\workspace\job_name
+Step 6: To create a folder inside job_name then select execute window batch command in build option of configuring.
+Step 7: Type mkdir dir_name in the given text area.
+Step 8: Save and build the project.
+Step 9: It can be seen that a directory is created inside job_name.
+
+This is how we can create a folder in work-space of Jenkins.

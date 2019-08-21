@@ -1,0 +1,18 @@
+--Configure git in Jenkins--
+Step 1:  Whenever Jenkins installed git plugin installed by default.
+Step 2:  If it is not installed due to some error go to Manage Jenkins>Manage Plugin 
+		 Go inside available and search for git plugin.
+		 Select plugin clicks on install with restart or without restart.
+		 Plugin installed can be seen inside the installed option.
+Step 3:  Once plugin installed to create a job in Jenkins from the new item and then,
+		 Choose the option of project type and click ok.
+Step 4:  Choose Git option under Source Code Management if your Git plugin has been installed in Jenkins.
+Step 5:  Enter the URL of the Git repository to pull the code from GitHub.
+Step 6:  There will be an error if it is the first time entered the repository URL.
+Step 7:  For this install Git on local system from  https://git-scm.com/downloads
+Step 8:  Install Git and check from cmd by typing git, if it is done then there will be options otherwise there will be an error which means git is not installed.
+Step 9:  Once it is done try adding the Git URL into Jenkins. There will be no error.
+Step 10: If there is any credential on repository then credential can be added from add option.
+Step 11: If the branch is other than the default branch(master) then branch can be updated as well.
+
+So, these are the credential and configuration which must be done during the use of git in Jenkins.
